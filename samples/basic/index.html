@@ -1,0 +1,108 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/tilteffect.css">
+</head>
+<body>
+	<!-- <div class="element"></div> -->
+	<img class=logo src="img/logo.png">
+	
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div id="page1" class="hard" style="background-image:url(pages/1.jpg)"><p></p></div>
+				<div id="page2" class="hard" style="background-image:url(pages/2.jpg)"><p></p></div>
+				<div id="page3" style="background-image:url(pages/3.jpg)"><p></p></div>
+				<div id="page4" style="background-image:url(pages/4.jpg)"><p></p></div>
+				<div id="page5" style="background-image:url(pages/5.png)"><p></p></div>
+				<div id="page6" style="background-image:url(pages/6.jpg)"><p></p></div>
+				<div id="page7" style="background-image:url(pages/7.jpg)"><p></p></div>
+				<div id="page8" style="background-image:url(pages/8.jpg)"><p></p></div>
+				<div id="page9" style="background-image:url(pages/9.png)"><p></p></div>
+				<div id="page10" style="background-image:url(pages/10.jpg)"><p></p></div>
+				<div id="page11" style="background-image:url(pages/11.png)"><p></p></div>
+				<div id="page12" style="background-image:url(pages/12.jpg)"><p></p></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript">
+	var pages = {
+		3: {
+			strings: [`Belay mizzen yard knave fire ship lanyard furl gibbet code of conduct grog port Shiver me timbers prow lee barque. Lass mutiny splice the main brace Davy Jones' Locker chase guns American Main yo-ho-ho piracy parley spyglass Cat o'nine tails holystone line furl quarter. Sheet cutlass pirate jib tackle gunwalls bowsprit nipperkin chantey yardarm gibbet main sheet handsomely tack grapple. Flogging Barbary Coast crimp boom list barque take a caulk Jack Tar heave to strike colors bowsprit tackle grog blossom overhaul warp.\n
+						Brig keelhaul transom wherry topsail handsomely trysail tender doubloon Jolly Roger schooner furl coxswain jib man-of-war. Pirate Round nipper port pink Sail ho driver Davy Jones' Locker hempen halter aye code of conduct bilge water swab shrouds fire ship measured fer yer chains. Jib Jack Tar Jack Ketch scurvy Plate Fleet pressgang marooned doubloon dance the hempen jig nipperkin Buccaneer Cat o'nine tails knave grog come about. Draught yard killick grapple Jolly Roger lugsail weigh anchor to go on account long clothes take a caulk chase gabion lugger port chantey.`],
+			typeSpeed: 40
+		},
+		5: {
+			strings: [`Belay mizzen yard knave fire ship lanyard furl gibbet code of conduct grog port Shiver me timbers prow lee barque. Lass mutiny splice the main brace Davy Jones' Locker chase guns American Main yo-ho-ho piracy parley spyglass Cat o'nine tails holystone line furl quarter. Sheet cutlass pirate jib tackle gunwalls bowsprit nipperkin chantey yardarm gibbet main sheet handsomely tack grapple. Flogging Barbary Coast crimp boom list barque take a caulk Jack Tar heave to strike colors bowsprit tackle grog blossom overhaul warp.\n
+						Brig keelhaul transom wherry topsail handsomely trysail tender doubloon Jolly Roger schooner furl coxswain jib man-of-war. Pirate Round nipper port pink Sail ho driver Davy Jones' Locker hempen halter aye code of conduct bilge water swab shrouds fire ship measured fer yer chains. Jib Jack Tar Jack Ketch scurvy Plate Fleet pressgang marooned doubloon dance the hempen jig nipperkin Buccaneer Cat o'nine tails knave grog come about. Draught yard killick grapple Jolly Roger lugsail weigh anchor to go on account long clothes take a caulk chase gabion lugger port chantey.`],
+			typeSpeed: 40
+		},
+		7: {
+			strings: [`Belay mizzen yard knave fire ship lanyard furl gibbet code of conduct grog port Shiver me timbers prow lee barque. Lass mutiny splice the main brace Davy Jones' Locker chase guns American Main yo-ho-ho piracy parley spyglass Cat o'nine tails holystone line furl quarter. Sheet cutlass pirate jib tackle gunwalls bowsprit nipperkin chantey yardarm gibbet main sheet handsomely tack grapple. Flogging Barbary Coast crimp boom list barque take a caulk Jack Tar heave to strike colors bowsprit tackle grog blossom overhaul warp.\n
+						Brig keelhaul transom wherry topsail handsomely trysail tender doubloon Jolly Roger schooner furl coxswain jib man-of-war. Pirate Round nipper port pink Sail ho driver Davy Jones' Locker hempen halter aye code of conduct bilge water swab shrouds fire ship measured fer yer chains. Jib Jack Tar Jack Ketch scurvy Plate Fleet pressgang marooned doubloon dance the hempen jig nipperkin Buccaneer Cat o'nine tails knave grog come about. Draught yard killick grapple Jolly Roger lugsail weigh anchor to go on account long clothes take a caulk chase gabion lugger port chantey.`],
+			typeSpeed: 40
+		},
+		9: {
+			strings: [`Belay mizzen yard knave fire ship lanyard furl gibbet code of conduct grog port Shiver me timbers prow lee barque. Lass mutiny splice the main brace Davy Jones' Locker chase guns American Main yo-ho-ho piracy parley spyglass Cat o'nine tails holystone line furl quarter. Sheet cutlass pirate jib tackle gunwalls bowsprit nipperkin chantey yardarm gibbet main sheet handsomely tack grapple. Flogging Barbary Coast crimp boom list barque take a caulk Jack Tar heave to strike colors bowsprit tackle grog blossom overhaul warp.\n
+						Brig keelhaul transom wherry topsail handsomely trysail tender doubloon Jolly Roger schooner furl coxswain jib man-of-war. Pirate Round nipper port pink Sail ho driver Davy Jones' Locker hempen halter aye code of conduct bilge water swab shrouds fire ship measured fer yer chains. Jib Jack Tar Jack Ketch scurvy Plate Fleet pressgang marooned doubloon dance the hempen jig nipperkin Buccaneer Cat o'nine tails knave grog come about. Draught yard killick grapple Jolly Roger lugsail weigh anchor to go on account long clothes take a caulk chase gabion lugger port chantey.`],
+			typeSpeed: 40
+		},
+		11: {
+			strings: [`Belay mizzen yard knave fire ship lanyard furl gibbet code of conduct grog port Shiver me timbers prow lee barque. Lass mutiny splice the main brace Davy Jones' Locker chase guns American Main yo-ho-ho piracy parley spyglass Cat o'nine tails holystone line furl quarter. Sheet cutlass pirate jib tackle gunwalls bowsprit nipperkin chantey yardarm gibbet main sheet handsomely tack grapple. Flogging Barbary Coast crimp boom list barque take a caulk Jack Tar heave to strike colors bowsprit tackle grog blossom overhaul warp.\n
+						Brig keelhaul transom wherry topsail handsomely trysail tender doubloon Jolly Roger schooner furl coxswain jib man-of-war. Pirate Round nipper port pink Sail ho driver Davy Jones' Locker hempen halter aye code of conduct bilge water swab shrouds fire ship measured fer yer chains. Jib Jack Tar Jack Ketch scurvy Plate Fleet pressgang marooned doubloon dance the hempen jig nipperkin Buccaneer Cat o'nine tails knave grog come about. Draught yard killick grapple Jolly Roger lugsail weigh anchor to go on account long clothes take a caulk chase gabion lugger port chantey.`],
+			typeSpeed: 40
+		},
+	};
+	
+
+
+	function loadApp() {
+		// Create the flipbook
+		$('.flipbook').turn({
+				when: {
+					turning: function(event, page, pageObject) {
+						// Implementation
+						if (pages[++page] && !pages[page].hasTyped){
+
+							var typed = new Typed("#page" + page + " p", pages[page]);
+							console.log(page);
+						pages[page].hasTyped = true;
+						}
+					}
+				},
+				// Width
+				width:1222,
+				
+				// Height
+				height:900,
+				// Elevation
+				elevation: 50,
+				
+				// Enable gradients
+				gradients: true,
+				
+				// Auto center this flipbook
+			
+		});
+	}
+	// Load the HTML4 version if there's not CSS transform
+	yepnope({
+		test : Modernizr.csstransforms,
+		yep: ['js/lib/turn.js'],
+		nope: ['js/lib/turn.html4.min.js'],
+		both: ['css/basic.css'],
+		complete: loadApp
+	});
+	</script>
+	<script type="text/javascript" src="js/tiltfx.js"></script>
+</body>
+</html>
