@@ -7,16 +7,19 @@
 <head>
 	<meta name="viewport" content="width = 1050, user-scalable = no" />
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-	<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/tilteffect.css">
 </head>
 <body>
 	<!-- <div class="element"></div> -->
 	<img class=logo src="img/logo.png">
-	
+	<link rel="preload" href="img/mainbg.jpg" as="video" type="video/mp4">
+	<video autoplay muted loop id="myVideo">
+  		<source src="img/mainbg.mp4" type="video/mp4">
+	</video>
 	<div class="flipbook-viewport">
-		<div class="container">
-			<div class="flipbook">
+		<div class="container" >
+			<div class="flipbook" data-tilt data-tilt-glare="true" data-tilt-max="1">
 				<div id="page1" class="hard" style="background-image:url(pages/1.jpg)"><p></p></div>
 				<div id="page2" class="hard" style="background-image:url(pages/2.jpg)"><p></p></div>
 				<div id="page3" style="background-image:url(pages/3.jpg)"><p></p></div>
@@ -33,6 +36,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="js/tilt.jquery.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
 	<script type="text/javascript">
 	var pages = {
@@ -80,10 +84,10 @@
 					}
 				},
 				// Width
-				width:1222,
+				width:1122,
 				
 				// Height
-				height:900,
+				height:800,
 				// Elevation
 				elevation: 50,
 				
@@ -103,6 +107,6 @@
 		complete: loadApp
 	});
 	</script>
-	<script type="text/javascript" src="js/tiltfx.js"></script>
+
 </body>
 </html>

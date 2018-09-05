@@ -2,8 +2,8 @@
 
 body{
 	overflow:hidden;
-	background-color:black;
-	background-image: url('../img/mainbg.jpg');
+	background-color: black;
+	background-image: url('img/mainbg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin:0;
@@ -18,8 +18,8 @@ body{
 
 .flipbook-viewport .container{
 	position:absolute;
-	left: 40%;
-	top: 34%;
+	left: 45%;
+	top: 40%;
 	margin:auto;
 }
 
@@ -44,8 +44,8 @@ body{
 .flipbook p {
 	margin: 0 auto;
 	padding: 120px;
-	font-family: 'East Sea Dokdo', cursive;
-	font-size: 23px;
+	font-family: 'Fondamento', cursive;
+	font-size: 20px;
 }
 .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -59,6 +59,8 @@ body{
 	padding: 100px;
 	height: 120px;
 	width: 120px;
+	position: absolute;
+	z-index: 10;
 }
 
 .logo img{
@@ -70,9 +72,22 @@ body{
 	color: white;
 }
 
+
 #page5 {
 	color: black;
 
+}
+
+#page9 {
+	color: black;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
 
 .typed-cursor {
