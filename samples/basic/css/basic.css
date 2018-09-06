@@ -8,6 +8,7 @@ body{
 	background-size: cover;
 	margin:0;
 	padding:0;
+
 }
 
 .flipbook-viewport{
@@ -21,6 +22,7 @@ body{
 	left: 45%;
 	top: 40%;
 	margin:auto;
+	z-index: 2;
 }
 
 .flipbook-viewport .flipbook{
@@ -45,7 +47,7 @@ body{
 	margin: 0 auto;
 	padding: 120px;
 	font-family: 'Fondamento', cursive;
-	font-size: 20px;
+	font-size: 18px;
 }
 .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -75,11 +77,16 @@ body{
 
 #page5 {
 	color: black;
+	}
 
-}
 
 #page9 {
 	color: black;
+}
+
+#page11 {
+	color: black;
+
 }
 
 #myVideo {
@@ -117,3 +124,32 @@ body{
 	box-shadow:0 0 20px #A9A9A9;
 }
 
+.date {
+	font-family: 'Pirata One', cursive;
+	font-size: 40px;
+	z-index: 2;
+	color:#d3a733;
+	position: absolute;
+	left: 420px;
+	bottom: 100px;
+}
+
+.info {
+	font-family: 'Merienda', cursive;
+	font-size: 16px;
+	z-index: 2;
+	color:#d3a733;
+	position: absolute;
+	left: 420px;
+	bottom: 70px;
+}
+
+.maininfo {
+	font-family: 'Alegreya SC', serif;
+	font-size: 20px;
+	z-index: 2;
+	color:white;
+	position: absolute;
+	left: 420px;
+	top: 170px;
+}
