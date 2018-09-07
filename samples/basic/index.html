@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 </head>
 <body>
 	<!-- <div class="element"></div> -->
@@ -20,8 +21,9 @@
 		<source src="pirate.mp3" type="audio/mp3">
 	</audio>
 	<h1 class=date>Coming March 21, 2019</h1>
-	<h3 class="info">Open up for an entrance to the world of Dark Seas.</h3>
-	<h3 class="maininfo">Discover a world of adventure, fantasy and <br> horror in this soon to be released RPG.</h3>
+	<h3 class="info">Peel back the page corners for an <br> entrance to the world of Dark Seas.</h3>
+	<h3 class="maininfo">DISCOVER A WORLD<br> OF ADVENTURE, FANTASY <br> AND HORROR IN THIS  <br>SOON TO BE RELEASED RPG.</h3>
+	
 	<link rel="preload" href="img/mainbg.jpg" as="video" type="video/mp4">
 	<video autoplay muted loop id="myVideo">
   		<source src="img/mainbg.mp4" type="video/mp4">
@@ -38,9 +40,16 @@
 				<div id="page7" style="background-image:url(pages/7.jpg)"><p></p></div>
 				<div id="page8" style="background-image:url(pages/8.jpg)"><p></p></div>
 				<div id="page9" style="background-image:url(pages/9.png)"><p></p></div>
-				<div id="page10" style="background-image:url(pages/10.jpg)"><p></p></div>
-				<div id="page11" style="background-image:url(pages/11.png)"><p></p></div>
-				<div id="page12" style="background-image:url(pages/12.jpg)"><p></p></div>
+				<div class="slide-me" id="page10" style="background-image:url(pages/10.jpg)">
+					<p></p>
+				</div>
+				<div class="slide-me" id="page11" style="background-image:url(pages/11.jpg)">
+					<div class=yesop><h1>TO BE CONTINUED</h1></div>
+					<p></p></div>
+					<div id="page12"><p>All art downloaded from ArtStation<br> https://www.artstation.com/</p>
+						<p>Background music (Pirate Music - Pirate Cove) downloaded from Youtube.<br>https://www.youtube.com/watch?v=g-rklPFeOJE</p></div>
+			
+				
 			</div>
 		</div>
 	</div>
@@ -54,13 +63,13 @@
 						<h4>Our voyage begins.\n
 						Who could have foretold the events which were to come?</h4>\n
 						<h4>For even if there was someone wise enough to predict the days ahead, who would be crazy enough to believe it?</h4>`],
-			typeSpeed: 30
+			typeSpeed: 25
 		},
 		5: {
 			strings: [`<h4>Five days ago I heard talk of a lone Spanish ship sailing near the coast of Tahiti.\n
 						The rumour is that onboard the vessel there is a hoard of gold and treasure.</h4>\n
 						<h4>I managed to assemble my crew and a day later I set sail with haste to find the ship. I was very aware that other pirates would have heard of it as well and were already out looking for it.</h4>`],
-			typeSpeed: 30
+			typeSpeed: 25
 		},
 		7: {
 			strings: [`<h4>We had been sailing for a few days in search of the ship when strange things started happening.\n
@@ -70,7 +79,7 @@
 							 The ships compass stopped pointing true soon after the fog appeared.<h4>\n
 								<h4>We sailed for three days with no idea where we were going. And then just like it suddenly appeared. The fog disapeared.\n
 								Strangely in spire of saiing blindly we had ended up a few miles off the coast of Tahiti. And in the distance, I could see a ship.</h4>\n`],
-			typeSpeed: 30
+			typeSpeed: 25
 		},
 		9: {
 			strings: [`<h4>As we near closer to the we vessel it became clear that something was wrong.\n 
@@ -79,7 +88,7 @@
 						<h4>On closer inspection I could see the ship had been in a battle.\n
 						It was strange since I could not see any gun shot or cannon ball holes in the vessel.</h4>\n
 						<h4>The ship looked deserted. There were no bodies around, dead or alive.</h4>\n`],
-			typeSpeed: 30
+			typeSpeed: 25
 		},
 		11: {
 			strings: [`<h4>We board the ship, not expecting to find anything of value.\n
@@ -87,7 +96,14 @@
 						<h4>I walked down the broken stares into the captains chamber and I was overcome with awe.\n
 						Never in all my years have I seen so much gold. It was piled on top of eachother, more then I could behold.\n
 						Despite the mountain of treasure my eyes were transfixed by a gold statue lying between goblets and coins.</h4>\n`],
-			typeSpeed: 30
+			typeSpeed: 25,
+			onComplete: function() { 
+				$(".slide-me").addClass("slide-out");
+				$("#page11 p").fadeOut(1000);
+				$(".yesop").fadeIn(1000);
+				 
+
+			}
 		},
 	};
 	
@@ -102,6 +118,7 @@
 	}
     window.addEventListener("load", initAudioPlayer);
 
+    
 
 	function loadApp() {
 		// Create the flipbook
@@ -141,6 +158,7 @@
 		both: ['css/basic.css'],
 		complete: loadApp
 	});
+
 	</script>
 
 </body>
